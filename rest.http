@@ -1,0 +1,37 @@
+@baseUrl = http://localhost:8000
+
+### Get all coffees
+GET {{baseUrl}}/coffees
+
+### Get a single coffee
+GET {{baseUrl}}/coffees/1
+
+### Create a new coffee
+POST {{baseUrl}}/coffees
+Content-Type: application/json
+
+{
+  "name": "Ethiopian Yirga",
+  "brand": "Green Bottle",
+  "flavors": ["chocolate", "vanilla"],
+  "isEnabled": true
+
+}
+
+### Update a coffee
+PATCH {{baseUrl}}/coffees/1
+Content-Type: application/json
+
+{
+  "name": "Updated Coffee",
+  "brand": "Updated Brand"
+}
+
+### Delete a coffee
+DELETE {{baseUrl}}/coffees/1
+
+### Search/filter coffees (example)
+GET {{baseUrl}}/coffees?limit=10&offset=0
+
+### Pagination example
+GET {{baseUrl}}/coffees?page=2&limit=5
