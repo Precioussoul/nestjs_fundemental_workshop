@@ -13,7 +13,7 @@ export const AppDataSource = new DataSource({
   database: process.env.DB_NAME || 'i_luv_coffee',
   entities: [Coffee, Flavor, Event],
   migrations: ['src/migrations/*.ts'],
-  synchronize: false, // use migrations
+  synchronize: true,
 });
 
 AppDataSource.initialize()
