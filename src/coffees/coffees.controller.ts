@@ -17,7 +17,9 @@ import { PaginatedQueryDto } from './dto/pagination-query.dto';
 
 @Controller('coffees')
 export class CoffeesController {
-  constructor(private readonly coffeeService: CoffeesService) {}
+  constructor(private readonly coffeeService: CoffeesService) {
+    console.log('CoffeesController Instantiated');
+  }
 
   @Get()
   findAll(@Query() paginationQuery: PaginatedQueryDto) {

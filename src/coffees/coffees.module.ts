@@ -1,4 +1,4 @@
-import { Injectable, Module } from '@nestjs/common';
+import { Injectable, Module, Scope } from '@nestjs/common';
 import { CoffeesController } from './coffees.controller';
 import { CoffeesService } from './coffees.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
@@ -18,6 +18,7 @@ import { Event } from '../events/entities/event.entity';
         console.log('COFFEE_BRANDS');
         return coffeeBrands;
       },
+      scope: Scope.TRANSIENT,
     },
   ],
   exports: [CoffeesService],
