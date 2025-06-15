@@ -3,8 +3,6 @@ import {
   Controller,
   Delete,
   Get,
-  HttpCode,
-  HttpStatus,
   Param,
   Patch,
   Post,
@@ -16,6 +14,7 @@ import { CoffeesService } from './coffees.service';
 import { CreateCoffeeDto } from './dto/create-coffee.dto';
 import { UpdateCofeeDto } from './dto/update-cofee.dto';
 import { PaginatedQueryDto } from './dto/pagination-query.dto';
+import { Public } from '../common/decorators/public.decorator';
 
 @Controller('coffees')
 export class CoffeesController {
@@ -24,6 +23,7 @@ export class CoffeesController {
   }
 
   @UsePipes(ValidationPipe)
+  @Public()
   @Get()
   findAll(@Query() paginationQuery: PaginatedQueryDto) {
     return this.coffeeService.findAll(paginationQuery);
