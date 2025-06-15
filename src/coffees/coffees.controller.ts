@@ -25,7 +25,8 @@ export class CoffeesController {
   @UsePipes(ValidationPipe)
   @Public()
   @Get()
-  findAll(@Query() paginationQuery: PaginatedQueryDto) {
+  async findAll(@Query() paginationQuery: PaginatedQueryDto) {
+    await new Promise((resolve) => setTimeout(resolve, 4000));
     return this.coffeeService.findAll(paginationQuery);
   }
 
