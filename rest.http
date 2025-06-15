@@ -7,7 +7,7 @@ GET {{baseUrl}}/coffees
 GET {{baseUrl}}/coffees?limit=3
 
 ### Get a single coffee
-GET {{baseUrl}}/coffees/2
+GET {{baseUrl}}/coffees/abc
 Authorization: sk_9f8d7e6c5b4a3c2b1a0z9y8x7w6v5u4v3
 
 
