@@ -9,6 +9,8 @@ import {
   Patch,
   Post,
   Query,
+  UsePipes,
+  ValidationPipe,
 } from '@nestjs/common';
 import { CoffeesService } from './coffees.service';
 import { CreateCoffeeDto } from './dto/create-coffee.dto';
@@ -21,6 +23,7 @@ export class CoffeesController {
     console.log('CoffeesController Instantiated');
   }
 
+  @UsePipes(ValidationPipe)
   @Get()
   findAll(@Query() paginationQuery: PaginatedQueryDto) {
     return this.coffeeService.findAll(paginationQuery);
