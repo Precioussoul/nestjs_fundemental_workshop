@@ -16,8 +16,8 @@ POST {{baseUrl}}/coffees
 Content-Type: application/json
 
 {
-  "name": "Ethiopian Yirga #4",
-  "brand": "Green Bottle #4",
+  "name": "Ethiopian Yirga #6",
+  "brand": "Green Bottle #6",
   "flavors": ["chocolate", "vanilla"]
 }
 
