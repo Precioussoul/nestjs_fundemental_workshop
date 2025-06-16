@@ -17,6 +17,7 @@ import { PaginatedQueryDto } from './dto/pagination-query.dto';
 import { Public } from '../common/decorators/public.decorator';
 import { ParseIntPipe } from '../common/pipes/parse-int/parse-int.pipe';
 import { Protocol } from 'src/common/decorators/protocol.decorator';
+import { ApiForbiddenResponse } from '@nestjs/swagger';
 
 @Controller('coffees')
 export class CoffeesController {
@@ -24,6 +25,7 @@ export class CoffeesController {
     console.log('CoffeesController Instantiated');
   }
 
+  @ApiForbiddenResponse({ description: 'Forbidden' })
   @UsePipes(ValidationPipe)
   @Public()
   @Get()
