@@ -3,23 +3,26 @@
 ### Get all coffees
 GET {{baseUrl}}/coffees
 
+### Get all coffees with pagination
+GET {{baseUrl}}/coffees?limit=3
+
 ### Get a single coffee
-GET {{baseUrl}}/coffees/1
+GET {{baseUrl}}/coffees/abc
+Authorization: sk_9f8d7e6c5b4a3c2b1a0z9y8x7w6v5u4v3
+
 
 ### Create a new coffee
 POST {{baseUrl}}/coffees
 Content-Type: application/json
 
 {
-  "name": "Ethiopian Yirga",
-  "brand": "Green Bottle",
-  "flavors": ["chocolate", "vanilla"],
-  "isEnabled": true
-
+  "name": "Ethiopian Yirga #6",
+  "brand": "Green Bottle #6",
+  "flavors": ["chocolate", "vanilla"]
 }
 
 ### Update a coffee
-PATCH {{baseUrl}}/coffees/1
+PATCH {{baseUrl}}/coffees/2
 Content-Type: application/json
 
 {
@@ -28,7 +31,7 @@ Content-Type: application/json
 }
 
 ### Delete a coffee
-DELETE {{baseUrl}}/coffees/1
+DELETE {{baseUrl}}/coffees/2
 
 ### Search/filter coffees (example)
 GET {{baseUrl}}/coffees?limit=10&offset=0

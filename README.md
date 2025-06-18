@@ -19,6 +19,23 @@
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License MIT" />
   </a>
 </p>
+<h2 align="center">I Love Coffee API</h2>
+
+<p align="center">
+  A RESTful API for managing coffee products built with NestJS and MongoDB
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/@nestjs/core" target="_blank">
+    <img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NestJS Version" />
+  </a>
+  <a href="https://www.npmjs.com/package/mongoose" target="_blank">
+    <img src="https://img.shields.io/npm/v/mongoose.svg" alt="Mongoose Version" />
+  </a>
+  <a href="LICENSE" target="_blank">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License MIT" />
+  </a>
+</p>
 
 ## Description
 
@@ -44,12 +61,14 @@ I Love Coffee is a RESTful API built with NestJS and MongoDB, designed to manage
 ## Getting Started
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/yourusername/i-luv-coffee.git
    cd i-luv-coffee
    ```
 
 2. **Install dependencies**
+
    ```bash
    yarn install
    # or
@@ -58,12 +77,14 @@ I Love Coffee is a RESTful API built with NestJS and MongoDB, designed to manage
 
 3. **Set up environment variables**
    Create a `.env` file in the root directory with the following content:
+
    ```
    MONGODB_URI=mongodb://localhost:27017/coffee_shop
    PORT=3000
    ```
 
 4. **Run MongoDB using Docker (optional)**
+
    ```bash
    docker-compose up -d
    ```
@@ -99,20 +120,49 @@ yarn start:prod
 
 ## Testing
 
+# Build the project
+
+yarn build
+
+# Run in development mode with watch
+
+yarn start:dev
+
+# Run production build
+
+yarn start:prod
+
+````
+
+## Testing
+
 ```bash
+# Run unit tests
+yarn test
 # Run unit tests
 yarn test
 
 # Run e2e tests
 yarn test:e2e
+# Run e2e tests
+yarn test:e2e
 
 # Test coverage
 yarn test:cov
-```
+# Test coverage
+yarn test:cov
+````
+
+## Linting
 
 ## Linting
 
 ```bash
+# Lint code
+yarn lint
+
+# Format code
+yarn format
 # Lint code
 yarn lint
 
@@ -124,17 +174,23 @@ yarn format
 
 Build and run the application with Docker:
 
+## Docker Support
+
+Build and run the application with Docker:
+
 ```bash
 docker-compose up -d
 ```
 
 This will start:
+
 - MongoDB on port 27017
 - The NestJS application on port 3000
 
 ## API Documentation
 
 Once the application is running, you can access the API documentation at:
+
 - `http://localhost:3000/api` (if you have Swagger/OpenAPI set up)
 
 ## Contributing
@@ -146,6 +202,10 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 This project is [MIT licensed](LICENSE).
 
 ## Acknowledgements
+
+- [NestJS](https://nestjs.com/) - A progressive Node.js framework
+- [MongoDB](https://www.mongodb.com/) - The database for modern applications
+- [Mongoose](https://mongoosejs.com/) - Elegant MongoDB object modeling for Node.js
 
 - [NestJS](https://nestjs.com/) - A progressive Node.js framework
 - [MongoDB](https://www.mongodb.com/) - The database for modern applications
