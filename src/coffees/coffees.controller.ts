@@ -19,13 +19,13 @@ export class CoffeesController {
   constructor(private readonly coffeeService: CoffeesService) {}
 
   @Get()
-  findAll(@Query() paginationQuery: any) {
+  findAll(@Query() paginationQuery?: any) {
     return this.coffeeService.findAll();
   }
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.coffeeService.findOne(Number(id));
+    return this.coffeeService.findOne(id);
   }
 
   @Post()
@@ -35,11 +35,11 @@ export class CoffeesController {
 
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateCoffeeDto: UpdateCofeeDto) {
-    return this.coffeeService.update(Number(id), updateCoffeeDto);
+    return this.coffeeService.update(id, updateCoffeeDto);
   }
 
   @Delete(':id')
   delete(@Param('id') id: string) {
-    return this.coffeeService.delete(Number(id));
+    return this.coffeeService.delete(id);
   }
 }

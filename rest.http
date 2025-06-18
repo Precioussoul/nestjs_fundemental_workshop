@@ -4,7 +4,7 @@
 GET {{baseUrl}}/coffees
 
 ### Get a single coffee
-GET {{baseUrl}}/coffees/1
+GET {{baseUrl}}/coffees/6852de5b3ca93b0954ccb6f5
 
 ### Create a new coffee
 POST {{baseUrl}}/coffees
@@ -13,13 +13,11 @@ Content-Type: application/json
 {
   "name": "Ethiopian Yirga",
   "brand": "Green Bottle",
-  "flavors": ["chocolate", "vanilla"],
-  "isEnabled": true
-
+  "flavors": ["chocolate", "vanilla"]
 }
 
 ### Update a coffee
-PATCH {{baseUrl}}/coffees/1
+PATCH {{baseUrl}}/coffees/6852de5b3ca93b0954ccb6f5
 Content-Type: application/json
 
 {
