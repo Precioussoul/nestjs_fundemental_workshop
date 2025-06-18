@@ -19,6 +19,23 @@
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License MIT" />
   </a>
 </p>
+<h2 align="center">I Love Coffee API</h2>
+
+<p align="center">
+  A RESTful API for managing coffee products built with NestJS and MongoDB
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/@nestjs/core" target="_blank">
+    <img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NestJS Version" />
+  </a>
+  <a href="https://www.npmjs.com/package/mongoose" target="_blank">
+    <img src="https://img.shields.io/npm/v/mongoose.svg" alt="Mongoose Version" />
+  </a>
+  <a href="LICENSE" target="_blank">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License MIT" />
+  </a>
+</p>
 
 ## Description
 
@@ -103,16 +120,40 @@ yarn start:prod
 
 ## Testing
 
+# Build the project
+
+yarn build
+
+# Run in development mode with watch
+
+yarn start:dev
+
+# Run production build
+
+yarn start:prod
+
+````
+
+## Testing
+
 ```bash
+# Run unit tests
+yarn test
 # Run unit tests
 yarn test
 
 # Run e2e tests
 yarn test:e2e
+# Run e2e tests
+yarn test:e2e
 
 # Test coverage
 yarn test:cov
-```
+# Test coverage
+yarn test:cov
+````
+
+## Linting
 
 ## Linting
 
@@ -122,7 +163,16 @@ yarn lint
 
 # Format code
 yarn format
+# Lint code
+yarn lint
+
+# Format code
+yarn format
 ```
+
+## Docker Support
+
+Build and run the application with Docker:
 
 ## Docker Support
 
@@ -152,6 +202,10 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 This project is [MIT licensed](LICENSE).
 
 ## Acknowledgements
+
+- [NestJS](https://nestjs.com/) - A progressive Node.js framework
+- [MongoDB](https://www.mongodb.com/) - The database for modern applications
+- [Mongoose](https://mongoosejs.com/) - Elegant MongoDB object modeling for Node.js
 
 - [NestJS](https://nestjs.com/) - A progressive Node.js framework
 - [MongoDB](https://www.mongodb.com/) - The database for modern applications
