@@ -19,6 +19,23 @@
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License MIT" />
   </a>
 </p>
+<h2 align="center">I Love Coffee API</h2>
+
+<p align="center">
+  A RESTful API for managing coffee products built with NestJS and MongoDB
+</p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/@nestjs/core" target="_blank">
+    <img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NestJS Version" />
+  </a>
+  <a href="https://www.npmjs.com/package/mongoose" target="_blank">
+    <img src="https://img.shields.io/npm/v/mongoose.svg" alt="Mongoose Version" />
+  </a>
+  <a href="LICENSE" target="_blank">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License MIT" />
+  </a>
+</p>
 
 ## Description
 
